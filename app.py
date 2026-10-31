@@ -95,9 +95,9 @@ elif st.session_state.step == 5:
 # [6단계] 마지막 결과 화면
 elif st.session_state.step == 6:
     st.balloons() # 축하 효과
-    st.success("✨ 축하합니다! ✨")
+    st.success("✨ Xin chúc mừng! ✨")
     
-    st.subheader("첫인상이 좋고 붕어빵보다 좋아하는 사람이 특별히 너랑 데이트 해줄게 🥰")
+    st.subheader("Ấn tượng đầu tiên tốt, lại còn thích hơn cả bánh cá nữa, nên người đặc biệt như em sẽ hẹn hò với anh đấy. 🥰")
     
     # 마지막 이미지 파일 넣는 곳
     try:
