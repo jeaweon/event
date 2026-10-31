@@ -30,43 +30,43 @@ if st.session_state.step == 1:
 
 # [2단계] 첫 번째 질문
 elif st.session_state.step == 2:
-    st.title("❓ Q1. 오늘 하루가 어땠어?")
+    st.title("❓ Q1. Hôm nay ngày của bạn thế nào?")
     
     col1, col2 = st.columns(2)
     with col1:
-        if st.button("좋아! 😊", use_container_width=True):
+        if st.button("Thích! 😊", use_container_width=True):
             st.session_state.step = 3
             st.rerun()
     with col2:
-        if st.button("별로... 🥺", use_container_width=True):
+        if st.button("Bình thường... ", use_container_width=True):
             st.session_state.step = 3
             st.rerun()
 
 # [3단계] 두 번째 질문
 elif st.session_state.step == 3:
-    st.title("❓ Q2. 더 좋아하는 것은?")
+    st.title("❓ Q2. Thích cái nào hơn?")
     
     col1, col2 = st.columns(2)
     with col1:
-        if st.button("붕어빵 🐟", use_container_width=True):
+        if st.button("Bánh cá 🐟", use_container_width=True):
             st.session_state.step = "retry_q2"
             st.rerun()
     with col2:
-        if st.button("재원 💖", use_container_width=True):
+        if st.button("재원 ", use_container_width=True):
             st.session_state.step = 4
             st.rerun()
 
 # [3-1단계] 붕어빵 선택 시 나오는 화면
 elif st.session_state.step == "retry_q2":
-    st.error("😤 실망이야 다시해")
+    st.error("😤 Thất vọng quá, làm lại đi!")
     st.write("")
-    if st.button("두 번째 질문으로 돌아가기 🔄", use_container_width=True):
+    if st.button("Quay lại câu hỏi thứ hai 🔄", use_container_width=True):
         st.session_state.step = 3
         st.rerun()
 
 # [4단계] 세 번째 질문
 elif st.session_state.step == 4:
-    st.title("❓ Q3. 저라는 사람의 첫인상, 솔직히 몇 점이었습니까?")
+    st.title("❓ Q3. Nói thật thì ấn tượng đầu tiên của tôi trong mắt bạn được mấy điểm?")
     
     col1, col2 = st.columns(2)
     with col1:
@@ -80,7 +80,7 @@ elif st.session_state.step == 4:
 
 # [5단계] 네 번째 질문
 elif st.session_state.step == 5:
-    st.title("❓ Q4. 어디를 좋아해?")
+    st.title("❓ Q4. Bạn thích đâu?")
     
     col1, col2 = st.columns(2)
     with col1:
