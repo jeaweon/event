@@ -13,19 +13,19 @@ if "step" not in st.session_state:
 
 # [1단계] 인사 화면
 if st.session_state.step == 1:
-    st.title("👋 안녕! 반가워")
-    st.write("너를 위해 준비한 작은 이벤트 사이트야. 아래 버튼을 눌러볼래?")
+    st.title("👋 Xin chào!")
+    st.write("Đây là một trang web sự kiện nho nhỏ tôi chuẩn bị dành cho bạn. Bạn có muốn bấm thử vào nút bên dưới không?")
     
     st.write("") # 여백
     
-    if st.button("다음 단계로 ➡️", use_container_width=True):
+    if st.button("Bấm vào đây ➡️", use_container_width=True):
         st.session_state.step = 2
         st.rerun()
 
 # [2단계] 질문 및 2가지 선택지 화면
 elif st.session_state.step == 2:
-    st.title("❓ 간단한 질문 하나!")
-    st.subheader("오늘 저녁 맛있는 거 먹을 건데, 뭐 먹을까?")
+    st.title("1283 câu hỏi đơn giản")
+    st.subheader("Hôm nay ngày của bạn thế nào?")
     
     st.write("") # 여백
     
